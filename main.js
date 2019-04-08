@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    var i = 0;
+    var txt = 'happen.';
+    var speed = 800;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("text").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter();
+
+
     // Add smooth scrolling to all links in navbar + footer link
     $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
