@@ -39,8 +39,10 @@
   }
 
   .bio {
-      margin-left: 80px;
-      margin-top: 60px;
+      /* margin-left: 80px;
+      margin-top: 60px; */
+      width: auto;
+      height: auto;
   }
 
   .col-sm-1 {
